@@ -1,0 +1,18 @@
+modelName1:                               # the name of your model
+  hive_table_qualified_names:             # this is a predefined key to link to
+                                          # training data
+    - "db.table1@namespace"               # the qualifiedName of the hive_table
+                                          # object representing training data
+    - "db.table2@ns"
+  metadata:                               # this is a predefined key for 
+                                          # additional metadata
+    key1: value1                                    
+    key2: value2                                    
+    query: "select id, name from table"   # suggested use case: query used to
+                                          # extract training data
+    training_file: "fit.py"               # suggested use case: training file
+                                          # used
+modelName2:                               # multiple models can be specified in 
+                                          # one file
+  hive_table_qualified_names:             
+    - "db.table2@ns"

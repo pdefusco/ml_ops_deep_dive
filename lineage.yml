@@ -1,0 +1,20 @@
+"model":                               # the name of your model
+  hive_table_qualified_names:             # this is a predefined key to link to                                  # training data
+    - "default.ml_ops_demo_new@cm"            # the qualifiedName of the hive_table
+    - "default.ml_ops_demo_new_limit@cm"
+
+"explainer":
+  hive_table_qualified_names:             # this is a predefined key to link to                                     # training data
+    - "default.ml_ops_demo_new@cm"
+    - "default.ml_ops_demo_new_limit@cm"
+
+"Custom Metadata Model":
+  hive_table_qualified_names:             # this is a predefined key to link to                                     # training data
+    - "default.ml_ops_demo_new@cm"
+    - "default.ml_ops_demo_new_limit@cm"
+  metadata:
+    ml_library: "sklearn"
+    version: "11"
+    features: "all"
+    
+    
