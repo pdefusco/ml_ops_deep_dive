@@ -22,3 +22,5 @@ def predict(data):
   df = pd.DataFrame(data, index=[0], columns=header)
 
   return {'result': loaded_model.predict(df)[0]}
+
+print(['col'+str(i) for i in range(X.shape[1])])
